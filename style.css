@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.main {
+    min-height: 100vh;
+    align-items: center;
+    background-color: thistle;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.basic {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+/* Big Text */
+
+.text h1{
+    font-size: 50px;
+    font-weight: 550;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background: rgb(71, 190, 178);
+}
+/* ------------------------------------ */
+
+/* Container */
+.container {
+    background: rgba(255, 255, 255, 0.3);
+    padding: 10px 30px;
+    border: 1px solid white;
+}
+
+.image {
+    width: 200px;
+    height: 200px;
+    background: rgb(71, 190, 178);
+    padding: 10px;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.img {
+    width: 80%;
+    align-items: center;
+}
+
+.name {
+    font-size: 25px;
+    font-weight: 600;
+    color: rgb(8, 0, 47);
+}
+
+.proglan {
+    font-size: 20px;
+    font-weight: 550;
+    color: rgb(71, 190, 178);
+}
+
+.main_texts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.details {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(8, 0, 47);
+}
+
+.same {
+    background: transparent;
+    border: none;
+    fill: teal;
+}
+
+.random {
+    padding: 10px 30px;
+    background: springgreen;
+    font-size: 17px;
+    border: 2px solid springgreen;
+    color: white;
+    border-radius: 10px;
+    transition: all .3s linear;
+}
+
+.random:hover {
+    background-color: transparent;
+    color: springgreen;
+    box-shadow: 0px 5px 10px rgb(71, 190, 178);
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text_content {
+    width: 500px;
+}
+
+.divide {
+    display: grid;
+    grid-template-columns: 2fr 4fr 2fr;
+}
+
+
+
+
+@media screen and (max-width: 630px) {
+    .divide {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container {
+        padding: 5px;
+    }
+
+    .main {
+        padding: 5px;
+    }
+
+    .hole {
+        display: none;
+    }
+
+    .text h1{
+        font-size: 30px;
+        font-weight: 550;
+    }
+    
+    .line {
+        width: 100px;
+        height: 4px;
+        background: rgb(71, 190, 178);
+    }
+
+    .image {
+        width: 150px;
+        height: 150px;
+        background: rgb(71, 190, 178);
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+
+    .img {
+        width: 50%;
+    }
+
+}
